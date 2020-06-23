@@ -35,9 +35,9 @@ def origin(word):
     elif german == -1 and latin > -1:
         res = 'latin', ety_orig
     elif german > -1 and latin == -1:
-        res = 'german', ety_orig
+        res = 'germanic', ety_orig
     else:
-        res = ('german' if german < latin else 'latin'), ety_orig
+        res = ('germanic' if german < latin else 'latin'), ety_orig
     return jsonify(res)
 
 if __name__ == '__main__':
