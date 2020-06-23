@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guessymology</title>
+
+  <script>
+    var element;
+	var text;
+
+    function nextWord() {
+      element = document.getElementById('word');
+	  fetch('/rand-word')
+		.then(response => response.text().then(res => {
+		  text = res;
+		  element.innerText = text;
+		  document.getElementById('quiz').style.display = 'block';
+		  document.getElementById('check').style.display = 'none';
+		}));
+    }
+	
+	function guess(str) {
+	  fetch('/origin/' + text)
+	    .then(response => response.json())
+		.then(data => check(str, data));
+	}
+	
+	function check(given, correct) {
+	  console.log(given, correct);
+	  document.getElementById('quiz').style.display = 'none';
+	  document.getElementById('check').style.display = 'block';
+	  document.getElementById('etymology').innerText = correct[1];
+	  
+	  out = document.getElementById('right-wrong');
+	  out.innerText = (correct[0] == given) ? "Right!" : "Wrong!";
+	}
+  </script>
+</head>
+
+<body onload="nextWord()">
+  <h1>Guessymology</h1>
+  <h3>Guess the origin of words!</h3>
+  <span id="quiz">
+    <h2 id="word"></h2>
+    <button type="button" onclick="guess('german')">German</button>
+    <button type="button" onclick="guess('latin')">Latin</button>
+    <button type="button" onclick="guess('other')">Other</button>
+  </span>
+  <span id="check">
+	<h2 id="right-wrong"><h2>
+	<p id="etymology"></p>
+	<button type="button" onclick="nextWord()">Ok</button>
+  </span>
+</body>
+
+</html>
