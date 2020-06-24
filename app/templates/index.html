@@ -11,6 +11,8 @@
   <script>
     var element;
 	var text;
+	var n_correct = 0;
+	var total = 0;
 
     function nextWord() {
       element = document.getElementById('word');
@@ -36,7 +38,12 @@
 	  document.getElementById('etymology').innerText = correct[1];
 	  
 	  out = document.getElementById('right-wrong');
-	  out.innerText = (correct[0] == given) ? "Right!" : "Wrong!";
+	  was_correct = (correct[0] == given);
+	  out.innerText = was_correct ? "Right!" : "Wrong!";
+	  
+	  total++;
+	  if (was_correct) n_correct++;
+	  document.getElementById("score").innerText = n_correct + "/" + total;
 	}
   </script>
 </head>
@@ -46,6 +53,7 @@
     <h1>Guessymology</h1>
     <h3>Guess the origin of words!</h3>
   </div>
+  <h3 id="score">0/0</h3>
   <span id="quiz">
     <h2 id="word"></h2>
     <button type="button" onclick="guess('germanic')">Germanic</button>
