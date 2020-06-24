@@ -17,9 +17,10 @@ h1 {
 
 h2 {
 	font-size: 2.2em;
+	margin: 20px;
 }
 
-h3 {
+#header h3 {
 	margin: 4px;
 	font-size: 1.4em;
 }
@@ -42,4 +43,9 @@ button {
     border-radius: 6px;
     margin: 0 3px;
 	font-weight: bold;
+}
+
+#score {
+	font-size: 1.6em;
+	margin-top: 20px 0 10px 0;
 }
