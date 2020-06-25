@@ -2,7 +2,6 @@ the
 of
 to
 and
-a
 in
 is
 it
@@ -78,7 +77,6 @@ day
 could
 go
 come
-did
 number
 sound
 no
@@ -95,7 +93,6 @@ who
 may
 down
 side
-been
 now
 find
 any
@@ -115,7 +112,6 @@ only
 round
 man
 year
-came
 show
 every
 good
@@ -148,7 +144,6 @@ old
 too
 same
 tell
-does
 set
 three
 want
@@ -239,7 +234,6 @@ draw
 left
 late
 run
-don't
 while
 press
 close
@@ -253,9 +247,7 @@ seem
 together
 next
 white
-children
 begin
-got
 walk
 example
 ease
@@ -277,12 +269,10 @@ care
 second
 book
 carry
-took
 science
 eat
 room
 friend
-began
 idea
 fish
 mountain
@@ -311,7 +301,6 @@ list
 though
 feel
 talk
-bird
 soon
 body
 dog
@@ -341,14 +330,12 @@ south
 problem
 piece
 told
-knew
 pass
 since
 top
 whole
 king
 space
-heard
 best
 hour
 better
@@ -479,7 +466,6 @@ wonder
 laugh
 thousand
 ago
-ran
 check
 game
 shape
@@ -569,11 +555,8 @@ sky
 board
 joy
 winter
-sat
-written
 wild
 instrument
-kept
 glass
 grass
 cow
@@ -598,7 +581,6 @@ clothe
 strange
 gone
 jump
-baby
 eight
 village
 meet
@@ -613,7 +595,6 @@ seven
 paragraph
 third
 shall
-held
 hair
 describe
 cook
@@ -709,9 +690,7 @@ symbol
 die
 least
 trouble
-shout
 except
-wrote
 seed
 tone
 join
@@ -737,7 +716,6 @@ brown
 wear
 garden
 equal
-sent
 choose
 fell
 fit
@@ -803,7 +781,7 @@ necessary
 sharp
 wing
 create
-neighbor
+neighbour
 wash
 bat
 rather
@@ -925,8 +903,6 @@ guide
 experience
 score
 apple
-bought
-led
 pitch
 coat
 mass
